@@ -12,5 +12,5 @@ RUN wget -O photogenic.zip https://templatemo.com/download/tm-554-photogenic \
     && rm -rf photogenic photogenic.zip
 
 # Expose port 80 and run Apache
-EXPOSE 80
+EXPOSE 80 22
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
